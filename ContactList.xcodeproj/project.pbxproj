@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		5E8FDB002625E7D40076F54E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8FDAFF2625E7D40076F54E /* AppDelegate.swift */; };
 		5E8FDB022625E7D40076F54E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8FDB012625E7D40076F54E /* SceneDelegate.swift */; };
-		5E8FDB042625E7D40076F54E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8FDB032625E7D40076F54E /* ViewController.swift */; };
 		5E8FDB072625E7D40076F54E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E8FDB052625E7D40076F54E /* Main.storyboard */; };
 		5E8FDB092625E7D40076F54E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E8FDB082625E7D40076F54E /* Assets.xcassets */; };
 		5E8FDB0C2625E7D40076F54E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E8FDB0A2625E7D40076F54E /* LaunchScreen.storyboard */; };
+		5E8FDB172625E9B40076F54E /* ContactsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8FDB162625E9B40076F54E /* ContactsListViewController.swift */; };
+		5E8FDB1A2625E9D20076F54E /* InfoContactsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8FDB192625E9D20076F54E /* InfoContactsListViewController.swift */; };
+		5E8FDB1D2625E9F70076F54E /* PersonInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8FDB1C2625E9F70076F54E /* PersonInfoViewController.swift */; };
+		5E8FDB212625EA8C0076F54E /* PersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8FDB202625EA8C0076F54E /* PersonModel.swift */; };
+		5E8FDB28262602690076F54E /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8FDB27262602690076F54E /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5E8FDAFC2625E7D40076F54E /* ContactList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E8FDAFF2625E7D40076F54E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E8FDB012625E7D40076F54E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5E8FDB032625E7D40076F54E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5E8FDB062625E7D40076F54E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5E8FDB082625E7D40076F54E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E8FDB0B2625E7D40076F54E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E8FDB0D2625E7D40076F54E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E8FDB162625E9B40076F54E /* ContactsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsListViewController.swift; sourceTree = "<group>"; };
+		5E8FDB192625E9D20076F54E /* InfoContactsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoContactsListViewController.swift; sourceTree = "<group>"; };
+		5E8FDB1C2625E9F70076F54E /* PersonInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInfoViewController.swift; sourceTree = "<group>"; };
+		5E8FDB202625EA8C0076F54E /* PersonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonModel.swift; sourceTree = "<group>"; };
+		5E8FDB27262602690076F54E /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,35 @@
 		5E8FDAFE2625E7D40076F54E /* ContactList */ = {
 			isa = PBXGroup;
 			children = (
+				5E8FDB1F2625EA040076F54E /* ViewController */,
+				5E8FDB242625EA960076F54E /* Model */,
 				5E8FDAFF2625E7D40076F54E /* AppDelegate.swift */,
 				5E8FDB012625E7D40076F54E /* SceneDelegate.swift */,
-				5E8FDB032625E7D40076F54E /* ViewController.swift */,
 				5E8FDB052625E7D40076F54E /* Main.storyboard */,
 				5E8FDB082625E7D40076F54E /* Assets.xcassets */,
 				5E8FDB0A2625E7D40076F54E /* LaunchScreen.storyboard */,
 				5E8FDB0D2625E7D40076F54E /* Info.plist */,
 			);
 			path = ContactList;
+			sourceTree = "<group>";
+		};
+		5E8FDB1F2625EA040076F54E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5E8FDB162625E9B40076F54E /* ContactsListViewController.swift */,
+				5E8FDB192625E9D20076F54E /* InfoContactsListViewController.swift */,
+				5E8FDB1C2625E9F70076F54E /* PersonInfoViewController.swift */,
+				5E8FDB27262602690076F54E /* TabBarViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		5E8FDB242625EA960076F54E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5E8FDB202625EA8C0076F54E /* PersonModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +165,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E8FDB042625E7D40076F54E /* ViewController.swift in Sources */,
+				5E8FDB212625EA8C0076F54E /* PersonModel.swift in Sources */,
+				5E8FDB1D2625E9F70076F54E /* PersonInfoViewController.swift in Sources */,
+				5E8FDB172625E9B40076F54E /* ContactsListViewController.swift in Sources */,
+				5E8FDB1A2625E9D20076F54E /* InfoContactsListViewController.swift in Sources */,
+				5E8FDB28262602690076F54E /* TabBarViewController.swift in Sources */,
 				5E8FDB002625E7D40076F54E /* AppDelegate.swift in Sources */,
 				5E8FDB022625E7D40076F54E /* SceneDelegate.swift in Sources */,
 			);
@@ -296,7 +328,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Crossy.ContactList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +347,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Crossy.ContactList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
